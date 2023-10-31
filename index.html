@@ -54,5 +54,31 @@
             <p></p>
             After Wiju's sell there were more tokens in the circulation, which caused the market cap to change again due the calculation of market cap being simply price x circulating supply. The next thing that happened took the community by shook, Wiju burnt tokens and added to liquidity creating another wave of fomo moving the price from almost nothing back up in a strong FOMO wave. But there were still some issues people saw after some community members tracked down the other dormant wallets by searching their ENS's on twitter and saw a semi active dormant wallet who was named John Palmer. In the next chapter we will learn about the John Palmer Saga and start to dive into the Battle Of Kyoro.
     </div>
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Data Display</title>
+</head>
+<body>
+    <div id="data-box">
+        <!-- Data will be displayed here -->
+    </div>
+
+    <script>
+        // Fetch data from the external website
+        fetch('https://20lab.app/dashboard/view/0xDf0b810A935aA1628a47750Bbd1BBCEf48f2c165')
+            .then(response => response.text()) // You can also use .json() for JSON data
+            .then(data => {
+                // Display the fetched data in the "data-box" div
+                document.getElementById('data-box').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error fetching data:', error);
+                // Handle the error
+            });
+    </script>
+</body>
+</html>
+
 </body>
 </html>
